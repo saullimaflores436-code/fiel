@@ -1,13 +1,13 @@
 package com.troll.fiel;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class FielController {
 
     @GetMapping("/")
     public String inicio() {
-        return "fiel";
+        return "La aplicación está funcionando correctamente";
     }
 }
